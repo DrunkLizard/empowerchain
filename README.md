@@ -43,14 +43,14 @@ empowerd version --long | head
 ## Moniker kısmını validator isminizi yazın.
 
 ```
-empowerd init <MONIKER> --chain-id altruistic-1 && \
+empowerd init <DrunkLizard> --chain-id altruistic-1 && \
 empowerd config chain-id altruistic-1
 ```
 
 ## Cüzdan oluşturun:
 
 ```
-empowerd keys add <WALLET_NAME>
+empowerd keys add <DrunkWallet>
 ```
 
 ## Genesis oluşturuyoruz:
@@ -58,7 +58,7 @@ empowerd keys add <WALLET_NAME>
 * <WALLET_NAME> kısmını düzenleyin.
 
 ```
-empowerd add-genesis-account <WALLET_NAME> 1000000umpwr
+empowerd add-genesis-account <DrunkWallet> 1000000umpwr
 ```
 
 ## Gentx oluşturuyoruz:
@@ -66,7 +66,7 @@ empowerd add-genesis-account <WALLET_NAME> 1000000umpwr
 * <WALLET_NAME> kısmını düzenleyin.
 
 ```
-empowerd gentx <WALLET_NAME> 1000000umpwr \
+empowerd gentx <DrunkWallet> 1000000umpwr \
 --chain-id=altruistic-1 \
 --moniker="<MONIKER>" \
 --commission-max-change-rate 0.1 \
@@ -165,7 +165,7 @@ sudo journalctl -u empowerd -f -o cat
 empowerd tx staking create-validator \
 --amount=9900000umpwr \
 --pubkey=$(empowerd tendermint show-validator) \
---moniker=RuesValidator \
+--moniker=DrunkLizard \
 --chain-id=altruistic-1 \
 --commission-rate="0.10" \
 --commission-max-rate="0.20" \
@@ -173,8 +173,8 @@ empowerd tx staking create-validator \
 --min-self-delegation="1" \
 --fees=250umpwr \
 --gas=200000 \
---from=rues \
---website="http://forum.rues.info/" \
---details="https://linktr.ee/ruesandora0" \
+--from=DrunWallet \
+--website="https://github.com/DrunkLizard" \
+--details="https://twitter.com/Ahmetca44340994" \
 -y
 ```
