@@ -43,14 +43,14 @@ empowerd version --long | head
 ## Moniker kısmını validator isminizi yazın.
 
 ```
-empowerd init <DrunkLizard> --chain-id altruistic-1 && \
+empowerd init DrunkLizard --chain-id altruistic-1 && \
 empowerd config chain-id altruistic-1
 ```
 
 ## Cüzdan oluşturun:
 
 ```
-empowerd keys add <DrunkWallet>
+empowerd keys add DrunkWallet
 ```
 
 ## Genesis oluşturuyoruz:
@@ -58,7 +58,7 @@ empowerd keys add <DrunkWallet>
 * <WALLET_NAME> kısmını düzenleyin.
 
 ```
-empowerd add-genesis-account <DrunkWallet> 1000000umpwr
+empowerd add-genesis-account DrunkWallet 1000000umpwr
 ```
 
 ## Gentx oluşturuyoruz:
@@ -66,7 +66,7 @@ empowerd add-genesis-account <DrunkWallet> 1000000umpwr
 * <WALLET_NAME> kısmını düzenleyin.
 
 ```
-empowerd gentx <DrunkWallet> 1000000umpwr \
+empowerd gentx DrunkWallet 1000000umpwr \
 --chain-id=altruistic-1 \
 --moniker="<MONIKER>" \
 --commission-max-change-rate 0.1 \
