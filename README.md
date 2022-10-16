@@ -173,7 +173,7 @@ empowerd tx staking create-validator \
 --min-self-delegation="1" \
 --fees=250umpwr \
 --gas=200000 \
---from=DrunWallet \
+--from=DrunkWallet \
 --website="https://github.com/DrunkLizard" \
 --details="https://twitter.com/Ahmetca44340994" \
 -y
