@@ -163,7 +163,7 @@ sudo journalctl -u empowerd -f -o cat
 
 ```
 empowerd tx staking create-validator \
---amount=9900000umpwr \
+--amount=3000000umpwr \
 --pubkey=$(empowerd tendermint show-validator) \
 --moniker=DrunkLizard \
 --chain-id=altruistic-1 \
